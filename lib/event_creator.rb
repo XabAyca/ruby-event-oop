@@ -32,8 +32,9 @@ class EventCreator
   def get_the_attendees
     puts "Génial. Qui va participer ? Balance leurs e-mails"
     print "> "
-    return gets.chomp.split
+    attendees=gets.chomp.split
     puts "Super, c'est noté, ton évènement a été créé !"
+    return attendees
   end
 
   def create_event()
